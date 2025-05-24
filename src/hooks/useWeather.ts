@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { setCurrentWeather, setForecast } from "../app/WeatherSlice";
+import { setCurrentWeather, setForecast } from "../features/WeatherSlice";
 import { fetchCurrentWeather,fetchForecast, fetchWeatherByCity } from "../api/weatherApi";
 
 export const useWeather = () => {

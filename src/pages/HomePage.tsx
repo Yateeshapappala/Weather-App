@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../app/store";
+import { RootState } from "../features/store";
 import { useWeather } from "../hooks/useWeather";
 import { useTheme } from "@mui/material/styles";
 import {
