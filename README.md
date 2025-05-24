@@ -1,46 +1,66 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌦️ Weather Application
 
-## Available Scripts
+## Overview
+This Weather Application fetches real-time weather data using the OpenWeather API. It detects the user’s current location and shows the current weather and a 7-day forecast. Users can also search weather by city name. The app uses React, TypeScript, Redux Toolkit, React Router, MUI, and Styled Components for a scalable and elegant UI.
 
-In the project directory, you can run:
+## Features
+- Detect user location and show current weather using Geolocation API
+- Search weather by city name
+- 7-day weather forecast with temperature, humidity, wind speed, and icons
+- Additional details like UV index, sunrise/sunset times
+- Dynamic weather condition icons
+- Dark/Light mode toggle using MUI ThemeProvider
+- Responsive design for mobile, tablet, and desktop
 
-### `npm start`
+## Tech Stack
+- React + TypeScript  
+- Redux Toolkit  
+- React Router  
+- Axios (for API calls)  
+- Material-UI (MUI)  
+- Styled Components  
+- Custom Hooks for reusable logic  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup Instructions
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+````
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Navigate to the project folder:
 
-### `npm test`
+   ```bash
+   cd weather-app
+   ```
+3. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file in the root directory and add your OpenWeather API key:
 
-### `npm run build`
+   ```
+   REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
+   ```
+5. Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will run on [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+* `/src/hooks` - Custom hooks including API calls
+* `/src/features` - Redux slices and state logic
+* `/src/pages` - App pages and routes
+* `/src/routes` - Styled Components and theme files
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Future Improvements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Save favorite locations
+* Weather alerts/notifications
+* Multi-language support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
