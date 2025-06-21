@@ -26,28 +26,25 @@ This Weather Application fetches real-time weather data using the OpenWeather AP
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/weather-app.git
-````
 
 2. Navigate to the project folder:
 
    ```bash
    cd weather-app
-   ```
+
 3. Install dependencies:
 
    ```bash
    npm install
-   ```
 4. Create a `.env` file in the root directory and add your OpenWeather API key:
 
    ```
    REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
-   ```
 5. Start the development server:
 
    ```bash
    npm start
-   ```
+   
 
 The app will run on [http://localhost:3000](http://localhost:3000).
 
